@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="beacon-simulator-android-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1583500619/beacon-simulator-android-master.iml" filepath="$PROJECT_DIR$/.idea/modules/1583500619/beacon-simulator-android-master.iml" group="beacon-simulator-android-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1740095863/localization-activity.iml" filepath="$PROJECT_DIR$/.idea/modules/1740095863/localization-activity.iml" group="beacon-simulator-android-master/modules/localization-activity" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1028798147/modules.iml" filepath="$PROJECT_DIR$/.idea/modules/1028798147/modules.iml" group="beacon-simulator-android-master/modules" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1819764917/nv-bluetooth.iml" filepath="$PROJECT_DIR$/.idea/modules/1819764917/nv-bluetooth.iml" group="beacon-simulator-android-master/modules/nv-bluetooth" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/15960218/postgresql-42.2.14.iml" filepath="$PROJECT_DIR$/.idea/modules/15960218/postgresql-42.2.14.iml" group="beacon-simulator-android-master/postgresql-42.2.14" />
+    </modules>
+  </component>
+</project>

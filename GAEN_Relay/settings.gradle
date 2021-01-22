@@ -1,0 +1,4 @@
+include ':postgresql-42.2.14'
+include ':app'
+include ':modules:localization-activity'
+include ':modules:nv-bluetooth'

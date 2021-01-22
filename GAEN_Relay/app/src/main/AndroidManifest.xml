@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.contacttracing.gaenrelay">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- For Crashlytics -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.contacttracing.gaenrelay.App"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.contacttracing.gaenrelay.ActivityMain"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.contacttracing.gaenrelay.ActivityAbout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.contacttracing.gaenrelay.ActivityDetailedScan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.contacttracing.gaenrelay.ActivityBeaconEdit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.contacttracing.gaenrelay.ActivitySettings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.contacttracing.gaenrelay.ActivityBeaconDiagnostic"
+            android:theme="@style/AppTheme.Dialog" />
+        <activity
+            android:name="com.contacttracing.gaenrelay.ActivityLicenses"
+            android:theme="@style/AppTheme.Dialog" />
+
+        <service android:name="com.contacttracing.gaenrelay.bluetooth.BeaconSimulatorService" />
+
+        <receiver
+            android:name="com.contacttracing.gaenrelay.RebootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
