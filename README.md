@@ -26,4 +26,4 @@ GAEN-relay is a practical demonstration about how easily GAEN-based contact trac
 
 The demo video shows the relay attack we simulated against two users, both equipped with Immuni and ImmuniGuard apps. Our malicious app sniffs an Immuni Bluetooth identifier to retrasmit it in a different location, thus completing a relay attack. We, then, show how Immuni does not distinguish between a legitimate Bluetooth identifier and a relayed one, and could trigger an incorrect exposure notification alert. On the contrary, we show how ImmuniGuard achieves this aim and detects the relay attack, while being user privacy-preserving. 
 
-A quick overview of the developer mode can be found in this short [video]():
+A quick overview of the developer mode can be found in this short [video](https://github.com/SPRITZ-Research-Group/ImmuniGuard/blob/main/immuniguard-demo.avi):
