@@ -22,8 +22,24 @@ We customized the code in order to detect Google Apple Exposure Notification pac
 
 GAEN-relay is a practical demonstration about how easily GAEN-based contact tracing apps can be exploited through relay attacks.
 
+#### Installation and Technical Notes
+
+ImmuniGuard and GAEN-Relay are a Android Studio projects built with Gradle. We provide the full source code for both applications.
+If you want to try them: open the corresponding project, build it and install the resulting apk file on a compatible smartphone.
+The apps are fully functional on Android Oreo (minimum SDK 21, recommended SDK 29), and were tested on the following smartphones:
+* Xiaomi Remid 5 Plus;
+* Samsung Galaxy S5;
+* Asus Zenfone 2.
+
+ImmuniGuard and GAEN-Relay do require permissions related to file storage, Internet, Bluetooth and GPS.
+Without them, they would be unable to scan for BLE beacons, perform proximity tracing and download/upload RPIs on a common database.
+We utilized a Heroku database as a temporary solution, so we encourage you to edit the projects in order to connect to your own database.
+
+
 #### Demo!
 
 The demo video shows the relay attack we simulated against two users, both equipped with Immuni and ImmuniGuard apps. Our malicious app sniffs an Immuni Bluetooth identifier to retrasmit it in a different location, thus completing a relay attack. We, then, show how Immuni does not distinguish between a legitimate Bluetooth identifier and a relayed one, and could trigger an incorrect exposure notification alert. On the contrary, we show how ImmuniGuard achieves this aim and detects the relay attack, while being user privacy-preserving. 
 
 A quick overview of the developer mode can be found in this short [video](https://github.com/SPRITZ-Research-Group/ImmuniGuard/blob/main/immuniguard-demo.avi):
+
+![](https://github.com/SPRITZ-Research-Group/ImmuniGuard/blob/main/immuniguard-demo.gif)
