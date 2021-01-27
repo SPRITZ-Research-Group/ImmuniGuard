@@ -4,9 +4,9 @@ ImmuniGuard is a mobile app developed as a solution to relay attacks on apps usi
 The purpose of ImmuniGuard is to be integrated as a feature in a future release of Immuni app, the Italian contact tracing app.
 
 For each contact with a GAEN-based app user, and specifically an Immuni user, ImmuniGuard locally stores:
-* Its own Immuni RPI;
-* The other user Immuni RPI;
-* Its own GPS coordinates;
+* Its own Immuni RPI.
+* The other user Immuni RPI.
+* Its own GPS coordinates.
 * The current timestamp.
 This data is merged in a HASH, and stored locally.
 
@@ -27,8 +27,8 @@ GAEN-relay is a practical demonstration about how easily GAEN-based contact trac
 ImmuniGuard and GAEN-Relay are a Android Studio projects built with Gradle. We provide the full source code for both applications.
 If you want to try them: open the corresponding project, build it and install the resulting apk file on a compatible smartphone.
 The apps are fully functional on Android Oreo (minimum SDK 21, recommended SDK 29), and were tested on the following smartphones:
-* Xiaomi Remid 5 Plus;
-* Samsung Galaxy S5;
+* Xiaomi Remid 5 Plus.
+* Samsung Galaxy S5.
 * Asus Zenfone 2.
 
 ImmuniGuard and GAEN-Relay do require permissions related to file storage, Internet, Bluetooth and GPS.
